@@ -1,0 +1,82 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+palette = 'catppuccin_mocha'
+
+format = """\
+[](fg:pink)[$os](bg:pink fg:crust)[](fg:pink) \
+[](fg:mauve)[](bg:mauve fg:crust)[](fg:mauve bg:surface0)$directory[](fg:surface0)\
+$git_branch$git_status\
+$fill\
+$time\
+$username\
+$line_break$character"""
+
+[os]
+disabled = false
+format = '$symbol'
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰀵"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+EndeavourOS = ""
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+Pop = ""
+
+[fill]
+symbol = "─"
+style = "fg:surface0"
+
+[directory]
+format = '[ $path]($style)'
+truncation_length = 3
+style = 'bg:surface0 fg:white'
+
+[git_branch]
+format = ' [](fg:green)[](bg:green fg:crust)[](fg:green bg:surface0)[ $branch]($style)[](fg:surface0)'
+style = 'bg:surface0 fg:white'
+
+[git_status]
+format = '[$all_status$ahead_behind](bg:surface0 fg:white)[](fg:surface0)'
+
+[time]
+disabled = false
+format = '[](fg:lavender)[](bg:lavender fg:crust)[](fg:lavender bg:surface0)[ $time]($style)[](fg:surface0) '
+style = 'bg:surface0 fg:white'
+time_format = "%H:%M"
+
+[username]
+show_always = true
+format = '[](fg:yellow)[](bg:yellow fg:crust)[](fg:yellow bg:surface0)[ $user]($style)[](fg:surface0) '
+style_user = 'bg:surface0 fg:white'
+style_root = 'bg:surface0 fg:white'
+
+[character]
+success_symbol = '[❯](bold fg:green)'
+error_symbol = '[❯](bold fg:red)'
+
+[palettes.catppuccin_mocha]
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+green = "#a6e3a1"
+sky = "#89dceb"
+lavender = "#b4befe"
+crust = "#11111b"
+surface0 = "#313244"
+yellow = "#f9e2af"
+
