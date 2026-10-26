@@ -25,7 +25,7 @@ I use the following tools as part of my daily workflow. Here is how to install t
 
 ### 💻 CLI & Editor Tools
 
-- **Terminal & Shell**: [Ghostty](https://ghostty.org/), [Fish](https://fishshell.com/), `starship`
+- **Terminal & Shell**: [Ghostty](https://ghostty.org/), zsh, `starship`
 - **Multiplexer**: [Zellij](https://zellij.dev/)
 - **History**: `atuin`
   ```bash
